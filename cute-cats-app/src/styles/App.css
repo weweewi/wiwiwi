@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.cat {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.pop {
+    position: absolute;
+    font-size: 24px;
+    color: #ff69b4;
+    animation: popAnimation 1s ease-in-out infinite;
+}
+
+@keyframes popAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
